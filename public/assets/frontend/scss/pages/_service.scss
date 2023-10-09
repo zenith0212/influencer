@@ -1,0 +1,117 @@
+.service-banner-section{
+    padding: calc(100px + (230 - 100) * ((100vw - 300px) / (1920 - 300))) 0 calc(100px + (176 - 100) * ((100vw - 300px) / (1920 - 300)));
+    position: relative;
+    background-image: url("../images/content/service-banner-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    .banner-img{
+        margin-right: -250px;
+
+        @media (max-width:1799px) {
+            margin-right: -150px;
+        }
+
+        @media (max-width:1699px) {
+            margin-right: -100px;
+        }
+       
+        @media (max-width:1599px) {
+            margin-right: -50px;
+        }
+
+        @media (max-width:991px) {
+            margin-right: 0;
+        }
+    }
+
+    .banner-content{
+        .banner-title{
+            font-weight: 700;
+            font-size: 60px;
+            font-size: calc(28px + (60 - 28) * ((100vw - 300px) / (2000 - 300)));
+            line-height: 1.5;  
+            margin-bottom: 30px;
+            span{
+                background: $gradiant;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+
+        }
+
+        p{
+            font-weight: 500;
+            font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (2000 - 300)));
+            line-height: 1.6;  
+            margin-bottom: 0;
+            max-width: 670px;
+       }    
+    }
+}
+
+.service-content{
+    p{
+        font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (2000 - 300)));
+        margin-bottom: 50px;
+        @media (max-width:991px) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.service-content{
+    @media (max-width:991px) {
+        margin-bottom: 20px;
+    }
+}
+
+.what-is-our-platform{
+    background-color: $white-color;
+    @media (max-width:991px) {
+        text-align: center;
+    }
+    .service-content-img{
+
+     
+        img{
+            margin-left: -100px;
+            @media (max-width:1499px) {
+                margin-left: -50px;
+            }
+
+            @media (max-width:991px) {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.how-we-do{
+    @media (max-width:991px) {
+        text-align: center;
+    }
+}   
+
+.what-results-we-provide{
+    background-color: $white-color;
+    @media (max-width:991px) {
+        text-align: center;
+    }
+    
+    .service-content-img{
+        img{
+            margin-left: -55px;
+
+            @media (max-width:1499px) {
+                margin-left: -40px;
+            }
+
+            @media (max-width:991px) {
+                margin-left: 0;
+            }
+        }
+    }
+}

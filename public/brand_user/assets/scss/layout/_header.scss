@@ -1,0 +1,120 @@
+header{
+    background: $white-color;
+    min-height: 80px;
+    margin-left: 330px;
+    width: calc(100% - 330px);
+    position: sticky;
+    top: 0;
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    z-index: 1000;
+
+    @media (max-width: 1299px) {
+        margin-left: 280px;
+        width: calc(100% - 280px);
+    }
+
+
+    @media (max-width: 1099px) {
+        margin-left: 240px;
+        width: calc(100% - 240px);
+    }
+
+    @media (max-width: 991px) {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .navbar{
+        padding: 0;
+        .navbar-custom{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 15px 10px;
+
+            .navbar-left{
+                .btn{
+                    background-color: rgba($dark-color, 0.2);
+                }
+            }
+
+            .navbar-right{
+                > ul{
+                    gap: 30px;
+                    display: flex;
+                    align-items: center;
+                    padding: 0;
+                    margin: 0;
+    
+                     li{
+                         a{
+                            color: $dark-color;
+                            font-size: 16px;
+                            display: block;
+                            span{
+                                display: inline-block;
+                            }
+                        }
+    
+                    }
+
+                    > li{
+                        > a{
+                            @media (max-width:575px) {
+                                font-size: 0;
+                            }
+                        }
+                    }
+
+                    .onhover-dropdown {
+                        position: relative;
+                      
+                        &:hover{
+                            .onhover-dropdown-menu{
+                                opacity: 1;
+                                visibility: visible;
+                                overflow: hidden;
+                                transform: translateY(0);
+                            }
+                        }
+    
+                        .onhover-dropdown-menu{
+                            box-shadow: 0 0 20px rgba(89,102,122,0.1);
+                            transform: translateY(30px);
+                            opacity: 0;
+                            visibility: hidden;
+                            right: 0;
+                            position: absolute;
+                            z-index: 8;
+                            background-color: #fff;
+                            border-radius: 10px;
+                            top: 60px;
+                            padding: 0;
+                            padding: 10px 15px;
+                            min-width: 200px;
+                            h4{
+                                padding: 10px 0;
+                                border-bottom: 1px solid rgba($dark-color, 0.2);
+                                text-transform: capitalize;
+                                font-size: 18px;
+                            }
+
+                            li{
+                                padding: 10px 0;
+                                font-size: 14px;
+
+                                a{
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+   
+}

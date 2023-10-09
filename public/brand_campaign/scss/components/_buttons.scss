@@ -1,0 +1,25 @@
+.primary-btn{
+    background: linear-gradient(93.65deg, #FD4524 0%, #F0684B 100%);
+    border-radius: 5px;
+    padding: 14px 20px;
+    color: $white-color;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    width: auto;
+    border: 1px solid transparent;
+}
+
+.outline-primary-button{
+    background: $white-color;
+    border-radius: 5px;
+    padding: 14px 20px;
+    color: $primary-color;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    width: auto;
+    border: 1px solid $primary-color;
+}   

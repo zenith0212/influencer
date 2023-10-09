@@ -1,0 +1,43 @@
+.dtp {
+    > .dtp-content{
+        > .dtp-date-view {
+            > header.dtp-header{
+                background: $primary-color;
+            }
+        }
+    }
+
+    div.dtp-date, div.dtp-time{
+        background: $secondary-color;
+    }
+
+    div.dtp-actual-year{
+        color: $white-color;
+    }
+    
+    .p10 {
+        > a{
+            color: $white-color;
+        }
+    }
+
+    table{
+        &.dtp-picker-days {
+            tr{
+                > td{
+                    > a{
+                        &.selected{
+                            background-color: $secondary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.year-picker-item{
+    &.active{
+        color: $secondary-color;
+    }
+}
